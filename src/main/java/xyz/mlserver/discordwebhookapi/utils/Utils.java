@@ -20,7 +20,7 @@ public abstract class Utils {
 
     /**
      * This static method will translate Hex color codes to Decimal color codes as that's Discords standard.
-     * You can use various tools to get a Hex color, like: https://htmlcolorcodes.com/
+     * You can use various tools to get a Hex color, like: <a href="https://htmlcolorcodes.com/">LINK</a>
      * @param hex Set the border color of your Embedded Message. This must be a Hex color code.
      * @return
      */

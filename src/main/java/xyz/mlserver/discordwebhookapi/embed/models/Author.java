@@ -27,7 +27,7 @@ public class Author {
     /**
      * This is the constructor to set the author of the embed.
      * @param name This represents the author's name.
-     * @param value This represents an URL -> boolean to set which one.
+     * @param value This represents an URL → boolean to set which one.
      * @param url If true the URL will be the Author URL, if false it will be an Icon URL.
      */
     public Author(String name, String value, boolean url) {
