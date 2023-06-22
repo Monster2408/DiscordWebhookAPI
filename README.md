@@ -1,10 +1,10 @@
 # DiscordWebhookAPI
 
-[![](https://jitpack.io/v/xyz.mlserver/DiscordWebhookAPI.svg)](https://jitpack.io/#xyz.mlserver/DiscordWebhookAPI)
+[![](https://jitpack.io/v/xyz.mlserver/DiscordWebHookAPI.svg)](https://jitpack.io/#xyz.mlserver/DiscordWebHookAPI)
 [![Twitter](https://badgen.net/twitter/follow/monster_2408?icon=twitter)](https://twitter.com/monster_2408)
 [![Discord](https://discord.com/api/guilds/556844677115150366/widget.png)](https://discord.mlserver.xyz)
 
-[Website](https://monster2408.com) | [Java Docs](https://docs.mlserver.jp/DiscordWebhookAPI/)
+[Website](https://monster2408.com) | [Java Docs](https://docs.mlserver.jp/DiscordWebHookAPI/)
 
 
 ## Send Message for Discord WebHook
