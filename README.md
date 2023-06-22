@@ -7,14 +7,14 @@
 [Website](https://monster2408.com) | [Java Docs](https://docs.mlserver.jp/DiscordWebhookAPI/)
 
 
-## Get MCVersion from ProtocolVersion
+## Send Message for Discord WebHook
 
-You can recognize the version of the player based on the ProtocolVersion obtained by ViaVersion, etc.
+You can send message for Discord WebHook.
 ```java
 DiscordWebHook message = new DiscordWebHook.Builder()
-        .content("Hello, World!") // this is message content
-        .username("username") // this is username
-        .avatar_url("https://example.com/avatar.png") // this is avatar url
+        .setContent("Hello, World!") // this is message content
+        .setUsername("username") // this is username
+        .setAvatarUrl("https://example.com/avatar.png") // this is avatar url
         .build();
 
 // this is webhook url
