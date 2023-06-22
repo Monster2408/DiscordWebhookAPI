@@ -33,7 +33,7 @@ public class Footer {
     /**
      * @return String This returns the URL of the footer iicon.
      */
-    public String getIcon_url() {
+    public String getIconUrl() {
         return icon_url;
     }
 

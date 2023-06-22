@@ -72,7 +72,7 @@ public class Author {
     /**
      * @return String This returns the Icon URL of the author
      */
-    public String getIcon_url() {
+    public String getIconUrl() {
         return icon_url;
     }
 

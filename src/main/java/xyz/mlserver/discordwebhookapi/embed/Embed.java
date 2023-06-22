@@ -171,7 +171,7 @@ public class Embed {
     /**
      * The Builder class allows for easy creation of an Embed Object.
      * Make sure to read the wiki page on our GitHub to understand how to use this effectively.
-     * (https://github.com/ItsRadiiX/Definity-Webhooks/wiki)
+     * (<a href="https://github.com/Monster2408/DiscordWebhookAPI">README</a>)
      */
     public static class Builder {
 
@@ -197,68 +197,68 @@ public class Embed {
         // Fields
         private List<Field> fields;
 
-        public Builder title(String title){
+        public Builder setTitle(String title){
             this.title = title;
             return this;
         }
 
-        public Builder description(String description){
+        public Builder setDescription(String description){
             this.description = description;
             return this;
         }
 
-        public Builder url(String url){
+        public Builder setUrl(String url){
             this.url = url;
             return this;
         }
 
-        public Builder color(String hex){
+        public Builder setColor(String hex){
             this.color = Utils.hexToDecimal(hex);
             return this;
         }
 
-        public Builder timestamp(){
+        public Builder setTimestamp(){
             this.timestamp = LocalDateTime.now().toString();
             return this;
         }
 
-        public Builder footer( String text, String icon_url){
+        public Builder setFooter(String text, String icon_url){
             this.footer = new Footer(text, icon_url);
             return this;
         }
 
-        public Builder footer(String text){
+        public Builder setFooter(String text){
             this.footer = new Footer(text);
             return this;
         }
 
-        public Builder thumbnail(String url){
+        public Builder setThumbnail(String url){
             this.thumbnail = new Thumbnail(url);
             return this;
         }
 
-        public Builder image(String url){
+        public Builder setImage(String url){
             this.image = new Image(url);
             return this;
         }
 
-        public Builder author(String name, String url, String icon_url){
+        public Builder setAuthor(String name, String url, String icon_url){
             this.author = new Author(name, url, icon_url);
             return this;
         }
 
-        public Builder author(String name, String url){
+        public Builder setAuthor(String name, String url){
             this.author = new Author(name, url);
             return this;
         }
 
-        public Builder field(String name, String value){
+        public Builder addField(String name, String value){
             if (fields == null){ fields = new ArrayList<>(); }
             fields.add(new Field(name, value));
             return this;
         }
 
-        public Builder field(String name, String value, boolean inline){
+        public Builder addField(String name, String value, boolean inline){
             if (fields == null){ fields = new ArrayList<>(); }
             fields.add(new Field(name, value, inline));
             return this;

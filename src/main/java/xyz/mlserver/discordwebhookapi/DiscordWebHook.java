@@ -45,7 +45,7 @@ public class DiscordWebHook {
     /**
      * @return String Avatar_URL of the WebHook Message.
      */
-    public String getAvatar_url() {
+    public String getAvatarUrl() {
         return avatar_url;
     }
 
@@ -75,7 +75,7 @@ public class DiscordWebHook {
     /**
      * The Builder class is used to easily build DiscordWebHook Objects.
      * Make sure to read the wiki page on our GitHub to understand how to use this effectively.
-     * (https://github.com/ItsRadiiX/Definity-Webhooks/wiki)
+     * (<a href="https://github.com/Monster2408/DiscordWebhookAPI">README</a>)
      */
     public static class Builder {
 
@@ -89,7 +89,7 @@ public class DiscordWebHook {
          * @param username Set the username of the DiscordWebHook message.
          * @return Builder Object for further creation of this Builder class.
          */
-        public Builder username(String username){
+        public Builder setUsername(String username){
             this.username = username;
             return this;
         }
@@ -98,7 +98,7 @@ public class DiscordWebHook {
          * @param avatar_url Set the Avatar URL of the DiscordWebHook message.
          * @return Builder Object for further creation of this Builder class.
          */
-        public Builder avatar_url(String avatar_url){
+        public Builder setAvatarUrl(String avatar_url){
             this.avatar_url = avatar_url;
             return this;
         }
@@ -107,7 +107,7 @@ public class DiscordWebHook {
          * @param content Set the text content of the DiscordWebHook message.
          * @return Builder Object for further creation of this Builder class.
          */
-        public Builder content(String content){
+        public Builder setContent(String content){
             this.content = content;
             return this;
         }
@@ -118,7 +118,7 @@ public class DiscordWebHook {
          * @param embed Add an embedded message to your DiscordWebHook message.
          * @return Builder Object for further creation of this Builder class.
          */
-        public Builder embed(Embed embed){
+        public Builder addEmbed(Embed embed){
             if (embeds == null){ embeds = new ArrayList<>(); }
             embeds.add(embed);
             return this;
