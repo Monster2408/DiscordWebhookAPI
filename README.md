@@ -1,6 +1,6 @@
 # DiscordWebhookAPI
 
-[![](https://jitpack.io/v/xyz.mlserver/DiscordWebHookAPI.svg)](https://jitpack.io/#xyz.mlserver/DiscordWebHookAPI)
+[![](https://jitpack.io/v/xyz.mlserver/DiscordWebhookAPI.svg)](https://jitpack.io/#xyz.mlserver/DiscordWebhookAPI)
 [![Twitter](https://badgen.net/twitter/follow/monster_2408?icon=twitter)](https://twitter.com/monster_2408)
 [![Discord](https://discord.com/api/guilds/556844677115150366/widget.png)](https://discord.mlserver.xyz)
 
