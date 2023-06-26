@@ -50,6 +50,15 @@ public class DiscordWebHook {
     }
 
     /**
+     * @return String Avatar_URL of the WebHook Message.
+     * @deprecated This method is deprecated due to the fact that it is not following the Java Naming Conventions.
+     */
+    @Deprecated
+    public String getAvatar_url() {
+        return avatar_url;
+    }
+
+    /**
      * @return String Text content of the WebHook Message.
      */
     public String getContent() {
@@ -95,10 +104,32 @@ public class DiscordWebHook {
         }
 
         /**
+         * @param username Set the username of the DiscordWebHook message.
+         * @return Builder Object for further creation of this Builder class.
+         * @deprecated This method is deprecated due to the fact that it is not following the Java Naming Conventions.
+         */
+        @Deprecated
+        public Builder username(String username){
+            this.username = username;
+            return this;
+        }
+
+        /**
          * @param avatar_url Set the Avatar URL of the DiscordWebHook message.
          * @return Builder Object for further creation of this Builder class.
          */
         public Builder setAvatarUrl(String avatar_url){
+            this.avatar_url = avatar_url;
+            return this;
+        }
+
+        /**
+         * @param avatar_url Set the Avatar URL of the DiscordWebHook message.
+         * @return Builder Object for further creation of this Builder class.
+         * @deprecated This method is deprecated due to the fact that it is not following the Java Naming Conventions.
+         */
+        @Deprecated
+        public Builder avatar_url(String avatar_url){
             this.avatar_url = avatar_url;
             return this;
         }
@@ -113,12 +144,37 @@ public class DiscordWebHook {
         }
 
         /**
+         * @param content Set the text content of the DiscordWebHook message.
+         * @return Builder Object for further creation of this Builder class.
+         * @deprecated This method is deprecated due to the fact that it is not following the Java Naming Conventions.
+         */
+        @Deprecated
+        public Builder content(String content){
+            this.content = content;
+            return this;
+        }
+
+        /**
          * the embed() method adds an embedded message.
          * If the list of embedded message does not exist yet it will be created automatically.
          * @param embed Add an embedded message to your DiscordWebHook message.
          * @return Builder Object for further creation of this Builder class.
          */
         public Builder addEmbed(Embed embed){
+            if (embeds == null){ embeds = new ArrayList<>(); }
+            embeds.add(embed);
+            return this;
+        }
+
+        /**
+         * the embed() method adds an embedded message.
+         * If the list of embedded message does not exist yet it will be created automatically.
+         * @param embed Add an embedded message to your DiscordWebHook message.
+         * @return Builder Object for further creation of this Builder class.
+         * @deprecated This method is deprecated due to the fact that it is not following the Java Naming Conventions.
+         */
+        @Deprecated
+        public Builder embed(Embed embed){
             if (embeds == null){ embeds = new ArrayList<>(); }
             embeds.add(embed);
             return this;

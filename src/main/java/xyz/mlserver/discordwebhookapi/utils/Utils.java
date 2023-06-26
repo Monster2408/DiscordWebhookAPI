@@ -64,13 +64,13 @@ public abstract class Utils {
                 URL url = new URL(route);
                 con = (HttpsURLConnection) url.openConnection();
                 con.setRequestMethod("POST");
-                con.setRequestProperty("Content-Type", "application/json");
+                con.setRequestProperty("Content-Type", "application/json; charset=utf-8");
                 con.setRequestProperty("Accept","application/json");
                 con.setDoOutput(true);
                 con.setDoInput(true);
 
                 DataOutputStream os = new DataOutputStream(con.getOutputStream());
-                os.writeBytes(json);
+                os.write(json.getBytes(StandardCharsets.UTF_8));
 
                 os.flush();
                 os.close();

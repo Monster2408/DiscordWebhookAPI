@@ -7,6 +7,7 @@ import xyz.mlserver.discordwebhookapi.embed.models.Image;
 import xyz.mlserver.discordwebhookapi.embed.models.Thumbnail;
 import xyz.mlserver.discordwebhookapi.utils.Utils;
 
+import java.awt.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -202,7 +203,19 @@ public class Embed {
             return this;
         }
 
+        @Deprecated
+        public Builder title(String title){
+            this.title = title;
+            return this;
+        }
+
         public Builder setDescription(String description){
+            this.description = description;
+            return this;
+        }
+
+        @Deprecated
+        public Builder description(String description){
             this.description = description;
             return this;
         }
@@ -212,7 +225,29 @@ public class Embed {
             return this;
         }
 
+        @Deprecated
+        public Builder url(String url){
+            this.url = url;
+            return this;
+        }
+
         public Builder setColor(String hex){
+            this.color = Utils.hexToDecimal(hex);
+            return this;
+        }
+
+        public Builder setColor(int color){
+            this.color = color;
+            return this;
+        }
+
+        public Builder setColor(Color color) {
+            this.color = color.getRGB();
+            return this;
+        }
+
+        @Deprecated
+        public Builder color(String hex){
             this.color = Utils.hexToDecimal(hex);
             return this;
         }
